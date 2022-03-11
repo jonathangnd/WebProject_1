@@ -1,0 +1,25 @@
+.pagecontent{
+    background: white;
+    position: absolute;
+
+    border-radius: 30px;
+    width: 35%;
+
+    padding: 3em;
+    left: 15%;
+    top: 200px;
+}
+.pagecontent h1{
+    color: #141016;
+    text-transform: uppercase;
+    font-size: 65px;
+    opacity: 65%;
+
+    
+}
+
+.welcomemenu{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
