@@ -21,7 +21,7 @@ body{background-color: #FFF0E1;}
 
 .navbar span{
     position: absolute;
-    right: 250px;
+    right: 50px;
 }
 .navbar span a:not(#workmenulink){
     margin: 2em;
@@ -86,7 +86,7 @@ body{background-color: #FFF0E1;}
 .logo{
     position: relative;
 
-    left: 250px;
+    left: 50px;
     font-weight: bold;
     font-size: 25px;
 
