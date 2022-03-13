@@ -119,15 +119,15 @@ ul, li, a, h1 {
         background-color: var(--main_color);
         border-radius: 10px;
     
-        width: 150px;
-        height: 50px;
+        width: 130px;
+        height: 45px;
     }
     
     .button_work a{
         color: var(--bg_color);
         display: grid;
         font-size: 13px;
-        margin-top: 17px;
+        margin-top: 15px;
     
         transition: margin-top 300ms ease 0s;
     }
@@ -135,9 +135,11 @@ ul, li, a, h1 {
         content: 'MON TRAVAIL';
         margin-top: 25px;
         padding: 15px 10%;
+
+        cursor: pointer;
     }
     .button_work:hover a{
-        margin-top: -37px;
+        margin-top: -39px;
     }
     
 }
