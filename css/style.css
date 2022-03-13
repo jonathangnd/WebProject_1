@@ -1,95 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;400;500 & display=swap');
 *,
-*::after,
-*::before{
-    padding: 0;margin: 0;
+*::before,
+*::after{
+    margin: 0; padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
-}
-body{background-color: #FFF0E1;}
 
-.navbar{
-    position: static;
-    display: flex;
-
-    justify-content: space-between;
-    padding: 0.8em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    --main_color: #07071E;
+    --bg_color: #FCF7F1;
 }
 
-.navbar span{
-    position: absolute;
-    right: 50px;
-}
-.navbar span a:not(#workmenulink){
-    margin: 2em;
-    padding: 0.5em;
 
+body{background-color: var(--bg_color);}
+ul, li, a, h1 {
+    color: var(--main_color);
+    list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    color: #141016;
-    border: 2px solid #FFF0E1;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-
-    transition: border 300ms ease-in-out, color 300ms ease-in-out;
-}
-.navbar span a:hover:not(#workmenulink){
-    border: 2px solid #141016;
-}
-
-
-.workmenu{
-    overflow: hidden;
-    position: absolute;
-    height: 40px;
-    width: 120px;
-    right: 110%;
-    top: -10px;
-    background-color: #141016;
-    border-radius: 5px;
-
-    text-align: center;
-    cursor: pointer;
-}
-.workmenu::before{
-    content: 'SURVOLE MOI';
-    position: relative;
-    top: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #FFF0E1;
-
-    transition: top 500ms ease;
-}
-.workmenu #workmenulink{
-    position: relative;
-    top: 50px;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #FFF0E1;
-    padding: 5px;
-
-    transition: top 300ms ease;
-}
-
-.workmenu:hover::before{
-    top: -20px;
-}
-.workmenu:hover #workmenulink{
-    top: -8px;
-}
-.logo{
-    position: relative;
-
-    left: 50px;
-    font-weight: bold;
-    font-size: 25px;
-
     cursor: default;
-    text-transform: uppercase;
+}
+
+/*Petite fenetre*/
+@media (max-width: 949px){
+    .navbar h1::before{
+        content: 'jonathan.gnd';
+        display: flex;
+        font-size: 10px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .nav_links li{
+        display: inline-block;
+        margin: 0px 2px;
+        padding: 6px 5px;
+        border-radius: 10px;
+        border: 2px solid var(--bg_color);
+    
+        transition: border 300ms ease 0s;
+    }
+    .nav_links li:hover{
+        border: 2px solid var(--main_color);
+    }
+    
+    .nav_links li a{
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    
+    .button_work{
+        overflow: hidden;
+        text-align: center;
+        background-color: var(--main_color);
+        border-radius: 10px;
+    
+        width: 100px;
+        height: 40px;
+    }
+    
+    .button_work a{
+        color: var(--bg_color);
+        display: grid;
+        font-size: 10px;
+        margin-top: 17px;
+    
+        transition: margin-top 300ms ease 0s;
+    }
+    .button_work a::after{
+        content: 'MON TRAVAIL';
+        margin-top: 25px;
+        padding: 15px 10%;
+    }
+    .button_work:hover a{
+        margin-top: -35px;
+    }
+    
+}
+
+/*Taille ecran standard ecran ordinateur*/
+@media (min-width: 950px){
+    .navbar h1::after{
+        content: 'jonathan guinard';
+        display: flex;
+        font-size: 18px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    
+    .nav_links li{
+        display: inline-block;
+        margin: 0px 10px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: 2px solid var(--bg_color);
+    
+        transition: border 300ms ease 0s;
+    }
+    .nav_links li:hover{
+        border: 2px solid var(--main_color);
+    }
+    
+    .nav_links li a{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    
+    .button_work{
+        overflow: hidden;
+        text-align: center;
+        background-color: var(--main_color);
+        border-radius: 10px;
+    
+        width: 150px;
+        height: 50px;
+    }
+    
+    .button_work a{
+        color: var(--bg_color);
+        display: grid;
+        font-size: 13px;
+        margin-top: 17px;
+    
+        transition: margin-top 300ms ease 0s;
+    }
+    .button_work a::after{
+        content: 'MON TRAVAIL';
+        margin-top: 25px;
+        padding: 15px 10%;
+    }
+    .button_work:hover a{
+        margin-top: -35px;
+    }
+    
 }
