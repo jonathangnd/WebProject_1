@@ -25,7 +25,7 @@ ul, li, a, h1 {
     .navbar h1::before{
         content: 'jonathan.gnd';
         display: flex;
-        font-size: 10px;
+        font-size: 14px;
     }
     .navbar{
         display: flex;
@@ -49,7 +49,7 @@ ul, li, a, h1 {
     
     .nav_links li a{
         padding: 10px 10px;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .button_work{
@@ -65,7 +65,7 @@ ul, li, a, h1 {
     .button_work a{
         color: var(--bg_color);
         display: grid;
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 13px;
     
         transition: margin-top 300ms ease 0s;
