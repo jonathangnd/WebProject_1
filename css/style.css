@@ -31,7 +31,7 @@ ul, li, a, h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 5%;
+        padding: 20px 50px;
     }
 
     .nav_links li{
@@ -92,7 +92,7 @@ ul, li, a, h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 5%;
+        padding: 20px 150px;
     }
     
     .nav_links li{
@@ -143,3 +143,4 @@ ul, li, a, h1 {
     }
     
 }
+
