@@ -92,7 +92,7 @@ ul, li, a, h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 150px;
+        padding: 20px 9em;
     }
     
     .nav_links li{
